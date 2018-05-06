@@ -1,4 +1,6 @@
 import React from 'react';
+import {translate} from 'react-i18next';
+import i18n from '../../../i18n';
 
 class caracteristicaHome extends React.Component{
     render() {
@@ -15,32 +17,32 @@ class caracteristicaHome extends React.Component{
                     </div>
                     <div className="col-md-6">
                         <div className="aside_features">
-                            <h1>Some of the top features</h1>
+                            <h1>{i18n.t("Home.Caracteristica.Title")}</h1>
                             <hr className="separator" />
                             <div className="features-box-1">
                                 <i className="pe-7s-add-user"></i>
                                 <div className="features-box-1-text">
-                                    <h3>Real use of SASS</h3>
+                                    <h3>{i18n.t("Home.Caracteristica.FirstCaracteristic")}</h3>
                                     <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    {i18n.t("Home.Caracteristica.FirstContent")}
                                     </p>
                                 </div>
                             </div>
                             <div className="features-box-1">
                                 <i className="pe-7s-browser"></i>
                                 <div className="features-box-1-text">
-                                    <h3>Bower support</h3>
+                                    <h3>{i18n.t("Home.Caracteristica.SecondCaracteristic")}</h3>
                                     <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    {i18n.t("Home.Caracteristica.SecondContent")}
                                     </p>
                                 </div>
                             </div>
                             <div className="features-box-1">
                                 <i className="pe-7s-phone"></i>
                                 <div className="features-box-1-text">
-                                    <h3>Fully responsive</h3>
+                                    <h3>{i18n.t("Home.Caracteristica.ThirdCaracteristic")}</h3>
                                     <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    {i18n.t("Home.Caracteristica.ThirdContent")}
                                     </p>
                                 </div>
                             </div>
@@ -56,4 +58,4 @@ class caracteristicaHome extends React.Component{
 
 }
 
-export default caracteristicaHome;
+export default translate("translations")(caracteristicaHome);

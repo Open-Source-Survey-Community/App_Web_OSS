@@ -1,4 +1,6 @@
 import React from 'react';
+import {translate} from 'react-i18next';
+import i18n from '../../../i18n';
 
 class LeyendaApp extends React.Component {
     render() {
@@ -9,14 +11,12 @@ class LeyendaApp extends React.Component {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="aside_features">
-                                    <h1>An easy way  to describe your  app</h1>
+                                    <h1>{i18n.t("Home.Leyenda.Title")}</h1>
                                     <hr className="separator" />
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                                    <p>
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                                        {i18n.t("Home.Leyenda.Content")}
+                                    </p>
+                                
                                 </div>
                             </div>
                             <div className="col-md-6 wow animated fadeInRight" data-wow-delay="0.2s">
@@ -30,4 +30,4 @@ class LeyendaApp extends React.Component {
     }
 }
 
-export default LeyendaApp;
+export default translate("translations")(LeyendaApp);

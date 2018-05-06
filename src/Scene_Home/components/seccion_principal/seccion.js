@@ -1,21 +1,37 @@
 import React from 'react';
-
+import {translate} from 'react-i18next';
+import i18n from '../../../i18n';
 
 class SeccionPrincipal extends React.Component{
+    constructor(props){
+        super(props);
+        this.Language = this.Language.bind(this);
+    }
+    Language(event){
+        i18n.changeLanguage(event.target.value);
+    }
     render() {
+        const styleBtnLanguage= {
+            position: "relative",
+            left: "40px"
+        }
       return (
         <section className="intro-section" id="welcome">
             <div className="container">
                 <div className="row">
                     <div className="col-md-7 col-md-offset-1 col-sm-12">
                         <div className="intro_text">
-                            <h1>Welcome to <span> Open Source Survey </span> Web App</h1>
+                            <h1>{i18n.t("Home.SeccionPrincipal.welcome")}</h1>
                             <br />
-                            <p>Available with App store and play store </p>
+                            <p>{i18n.t("Home.SeccionPrincipal.shortDescription")}</p>
                             <div className="buttons scroll-to">
-                                <a href="#features" className="btn btn-lg btn-light-dark ">I want respond some surveys!!<i className="fa fa-angle-down"></i></a>
-                                <a href="#download" className="btn btn-lg btn-skin ">Join Our Academic Community!!<i className="fa fa-cloud-download"></i></a>
+                                <a href="#features" className="btn  btn-light-dark ">{i18n.t("Home.SeccionPrincipal.btnRespondSurvey")}<i className="fa fa-angle-down"></i></a>
+                                <a href="#download" className="btn  btn-skin ">{i18n.t("Home.SeccionPrincipal.btnJoinOurApp")}<i className="fa fa-cloud-download"></i></a>
 
+                            </div>
+                            <div className="buttons scroll-to">
+                                <button className="btn btn-primary" value="en" onClick={this.Language}>ENGLISH</button>
+                                <button className="btn btn-primary" value="es" onClick={this.Language} style={styleBtnLanguage}>SPANISH</button>
                             </div>
                         </div>
                     </div>
@@ -39,4 +55,4 @@ class SeccionPrincipal extends React.Component{
     }
 }
 
-export default SeccionPrincipal;
+export default translate('translations')(SeccionPrincipal);

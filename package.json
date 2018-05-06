@@ -7,8 +7,11 @@
     "npm": "5.6.0"
   },
   "dependencies": {
+    "i18next": "^11.2.3",
+    "i18next-browser-languagedetector": "^2.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-i18next": "^7.6.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "serve": "^6.5.6"

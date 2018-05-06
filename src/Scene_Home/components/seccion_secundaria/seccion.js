@@ -1,4 +1,6 @@
 import React from 'react';
+import {translate} from 'react-i18next';
+import i18n from '../../../i18n';
 
 class SeccionSecundaria extends React.Component{
     render() {
@@ -7,9 +9,8 @@ class SeccionSecundaria extends React.Component{
           <section id="features" className="features-section">
             <div className="container">
                 <div className="section_heading">
-                    <h3>Amazing features</h3>
+                    <h3>{i18n.t('Home.SeccionSecundaria.title')}</h3>
                     <hr className="separator" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
 
                 <div className="row">
@@ -19,8 +20,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-mobile-phone"></i>
                             </div>
                             <div className="text">
-                                <h3>Responsive Design</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.FirstCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.FirstContent')}</p>
                             </div>                           
                         </div>
                         <div className="feature-right">
@@ -28,8 +29,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-twitter"></i>
                             </div>
                             <div className="text">
-                                <h3>Bootstrap3</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.SecondCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.SecondContent')}</p>
                             </div>                           
                         </div>
                         <div className="feature-right">
@@ -37,8 +38,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-mobile-phone"></i>
                             </div>
                             <div className="text">
-                                <h3>Responsive Design</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.ThirdCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.ThirdContent')}</p>
                             </div>                           
                         </div>
                         <div className="clearfix"></div>
@@ -62,8 +63,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-flag"></i>
                             </div>
                             <div className="text">
-                                <h3>400+ icon fonts</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.FourCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.FourContent')}</p>
                             </div>                           
                         </div>
                         <div className="feature-left">
@@ -71,8 +72,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-twitter"></i>
                             </div>
                             <div className="text">
-                                <h3>Bootstrap3</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.FiveCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.FiveContent')}</p>
                             </div>                           
                         </div>
                         <div className="feature-left">
@@ -80,8 +81,8 @@ class SeccionSecundaria extends React.Component{
                                 <i className="fa fa-mobile-phone"></i>
                             </div>
                             <div className="text">
-                                <h3>Responsive Design</h3>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h3>{i18n.t('Home.SeccionSecundaria.SixCaracteristic')}</h3>
+                                <p>{i18n.t('Home.SeccionSecundaria.SixContent')}</p>
                             </div>                           
                         </div>
                         <div className="clearfix">
@@ -96,4 +97,4 @@ class SeccionSecundaria extends React.Component{
 
 }
 
-export default SeccionSecundaria;
+export default translate('translations')(SeccionSecundaria);

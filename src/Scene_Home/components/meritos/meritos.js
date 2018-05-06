@@ -1,4 +1,7 @@
 import React from 'react';
+import {translate} from 'react-i18next';
+import i18n from '../../../i18n';
+
 class Merito extends React.Component{
     render() {
       return (
@@ -8,10 +11,10 @@ class Merito extends React.Component{
                 <div className="row">
                     <div className="col-md-6">
                         <div className="aside_features wow animated fadeInLeft">
-                            <h1>Learn how it work?</h1>
+                            <h1>{i18n.t("Home.Merito.Title")}</h1>
                             <hr className="separator" />
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {i18n.t("Home.Merito.Content")}
                             </p>                         
                         </div> 
                     </div>
@@ -28,4 +31,4 @@ class Merito extends React.Component{
     }
 }
 
-export default Merito;
+export default translate("translations")(Merito);
