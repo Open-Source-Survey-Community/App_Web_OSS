@@ -1,6 +1,7 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import i18n from '../../../i18n';
+import imageshot1 from '../../../assets/img/home/iphone_shot_1.png';
 
 class LeyendaApp extends React.Component {
     render() {
@@ -20,7 +21,7 @@ class LeyendaApp extends React.Component {
                                 </div>
                             </div>
                             <div className="col-md-6 wow animated fadeInRight" data-wow-delay="0.2s">
-                                <img src="images/iphone_shot_1.png" alt="" className="img-responsive" />
+                                <img src={imageshot1} alt="" className="img-responsive" />
                             </div>
                         </div>
                     </div>

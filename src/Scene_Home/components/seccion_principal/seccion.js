@@ -1,6 +1,10 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import i18n from '../../../i18n';
+import './seccion.css';
+import image1 from '../../../assets/img/home/1.jpg';
+import image2 from '../../../assets/img/home/2.jpg';
+import image3 from '../../../assets/img/home/3.jpg';
 
 class SeccionPrincipal extends React.Component{
     constructor(props){
@@ -30,8 +34,8 @@ class SeccionPrincipal extends React.Component{
 
                             </div>
                             <div className="buttons scroll-to">
-                                <button className="btn btn-primary" value="en" onClick={this.Language}>ENGLISH</button>
-                                <button className="btn btn-primary" value="es" onClick={this.Language} style={styleBtnLanguage}>SPANISH</button>
+                                <button className="btn btn-default language-en" value="en" onClick={this.Language}>ENGLISH</button>
+                                <button className="btn btn-default language-es" value="es" onClick={this.Language} style={styleBtnLanguage}>SPANISH</button>
                             </div>
                         </div>
                     </div>
@@ -40,9 +44,9 @@ class SeccionPrincipal extends React.Component{
                             <div className="iphone_inner flexslider">
                                 <div className="iphone_slider">
                                     <ul className="slides">
-                                        <li><img src="images/1.jpg" alt="" className="img-responsive" /></li>
-                                        <li><img src="images/2.jpg" alt="" className="img-responsive" /></li>
-                                        <li><img src="images/3.jpg" alt="" className="img-responsive" /></li>
+                                        <li><img src={image1} alt="" className="img-responsive" /></li>
+                                        <li><img src={image2} alt="" className="img-responsive" /></li>
+                                        <li><img src={image3} alt="" className="img-responsive" /></li>
                                     </ul>
                                 </div>
                             </div>

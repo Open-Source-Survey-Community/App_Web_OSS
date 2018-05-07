@@ -1,6 +1,9 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import i18n from '../../../i18n';
+import image1 from '../../../assets/img/home/1.jpg';
+import image2 from '../../../assets/img/home/2.jpg';
+import image3 from '../../../assets/img/home/3.jpg';
 
 class SeccionSecundaria extends React.Component{
     render() {
@@ -49,9 +52,9 @@ class SeccionSecundaria extends React.Component{
                             <div className="iphone_inner flexslider">
                                 <div className="iphone_slider">
                                     <ul className="slides">
-                                        <li><img src="images/1.jpg" alt="" className="img-responsive" /></li>
-                                        <li><img src="images/2.jpg" alt="" className="img-responsive" /></li>
-                                        <li><img src="images/3.jpg" alt="" className="img-responsive" /></li>
+                                        <li><img src={image1} alt="" className="img-responsive" /></li>
+                                        <li><img src={image2} alt="" className="img-responsive" /></li>
+                                        <li><img src={image3} alt="" className="img-responsive" /></li>
                                     </ul>
                                 </div>
                             </div>

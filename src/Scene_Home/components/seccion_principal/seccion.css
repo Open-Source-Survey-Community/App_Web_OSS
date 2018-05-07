@@ -1,0 +1,19 @@
+.language-en{
+    background: url('../../../assets/img/home/icon_english.png');
+    background-position: -9px -7px;
+    background-repeat: no-repeat;
+    background-size: 39px 43px;
+    padding-left: 41px;
+    background-color: #32c5d2;
+    color: white;
+}
+
+.language-es{
+    background: url('../../../assets/img/home/icon_spanish.png');
+    background-position: -9px -7px;
+    background-repeat: no-repeat;
+    background-size: 39px 43px;
+    padding-left: 41px;
+    background-color: #32c5d2;
+    color: white;
+}

@@ -298,7 +298,7 @@ hr.separator {
   height: 526px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/iphone-holder.png);
+  background-image: url('../../img/home/iphone-holder.png');
   background-repeat: no-repeat;
   margin: 0 auto;
   background-position: center top;
@@ -341,7 +341,7 @@ hr.separator {
   height: 475px;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/mockup-android.png);
+  background-image: url('../../img/home/mockup-android.png');
   background-repeat: no-repeat;
   margin: 0 auto;
   background-position: center top;
@@ -608,7 +608,7 @@ hr.separator {
 /**team section**/
 .team-section {
   padding: 100px 0;
-  background: url(../images/bg-2.jpg) no-repeat;
+  background: url('../../img/home/bg-2.jpg') no-repeat;
   background-size: cover;
   background-attachment: scroll;
   position: relative;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import i18n from '../../../i18n';
+import imageshot from '../../../assets/img/home/mockup-android-1.png';
 
 class caracteristicaHome extends React.Component{
     render() {
@@ -12,7 +13,7 @@ class caracteristicaHome extends React.Component{
 
                     <div className="col-md-6 wow animated fadeInLeft" data-wow-delay="0.2s">
 
-                        <img src="images/iphone_shot_1.png" alt="" className="img-responsive" />
+                        <img src={imageshot} alt="" className="img-responsive" />
 
                     </div>
                     <div className="col-md-6">

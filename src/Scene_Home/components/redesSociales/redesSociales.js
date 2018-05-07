@@ -1,7 +1,11 @@
 import React from 'react';
 import {translate} from 'react-i18next';
 import i18n from '../../../i18n';
-
+import arrow_up from '../../../assets/img/home/arrow-up.png';
+import githubIcon from '../../../assets/img/home/github.png';
+import googleIcon from '../../../assets/img/home/icon_google.png';
+import twitterIcon from '../../../assets/img/home/twitter-squared.png';
+import './redesSociales.css';
 class RedesSociales extends React.Component{
     render() {
         const style ={
@@ -20,11 +24,13 @@ class RedesSociales extends React.Component{
                             <p>{i18n.t("Home.RedesSociales.shortDescription")}</p>
                         </div>
                         <div className="buttons wow animated bounceIn" data-wow-delay="0.2s">
-                            <a ><img src="images/app-store.png" alt="" /></a>
-                            <a ><img src="images/play-store.png" alt="" /></a>
+                            <img src={githubIcon} alt="" className="img-icon"  />
+                            <img src={googleIcon} alt="" className="img-icon"  />
+                            <img src={twitterIcon} alt="" className="img-icon" />
+
                         </div>
                         <div className='space-30'></div>
-                        <img src="images/arrow-up.png" alt="" />
+                        <img src={arrow_up} alt="" />
                         <span>{i18n.t("Home.RedesSociales.description")}</span>
                     </div>
                 </div>
