@@ -5,7 +5,7 @@ import i18n from '../../../i18n';
 class Merito extends React.Component{
     render() {
       return (
-        <div>
+        <div id="features">
         <section className="aside_section">
             <div className="container">
                 <div className="row">
@@ -15,7 +15,8 @@ class Merito extends React.Component{
                             <hr className="separator" />
                             <p>
                             {i18n.t("Home.Merito.Content")}
-                            </p>                         
+                            </p>    
+                            <button className="btn btn-lg btn-skin">Go App</button>                     
                         </div> 
                     </div>
                     <div className="col-md-6">

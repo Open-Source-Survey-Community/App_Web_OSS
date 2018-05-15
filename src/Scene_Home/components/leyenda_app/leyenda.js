@@ -6,7 +6,7 @@ import imageshot1 from '../../../assets/img/home/iphone_shot_1.png';
 class LeyendaApp extends React.Component {
     render() {
         return (
-            <div>
+            <div >
                 <section className="aside_section">
                     <div className="container">
                         <div className="row">

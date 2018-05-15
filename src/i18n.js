@@ -62,7 +62,11 @@ export default i18n
 
                     'Home.RedesSociales.Title':"Log in just using social media",
                     'Home.RedesSociales.shortDescription':"Uhh!, you are developer or computer science, also we have access by github",
-                    'Home.RedesSociales.description':"Remember, log in with the same social media that you used to first time!"
+                    'Home.RedesSociales.description':"Remember, log in with the same social media that you used to first time!",
+                    'Login.Title':'Use our platform',
+                    'Login.Subtitle':'through of the social networks',
+                    'Login.FirstContent':'this platform use cookies to give you better experience',
+                    'Login.SecondContent':'in our platform'
                 }
             },
             es: {
@@ -124,7 +128,12 @@ export default i18n
 
                         'Home.RedesSociales.Title':"Ingresa a nuestra plataforma usando solo redes sociales",
                         'Home.RedesSociales.shortDescription':"Uhh, tu eres desarrollador or tienes un titulo de computer science, nosotros te damos acceso a nuestra plataforma por github",
-                        'Home.RedesSociales.description':"Recuerda registrarte usando el mismo medio social, que usaste cuando ingresaste por primera vez a la plataforma"
+                        'Home.RedesSociales.description':"Recuerda registrarte usando el mismo medio social, que usaste cuando ingresaste por primera vez a la plataforma",
+                        
+                        'Login.Title':'Usa nuestra plataforma',
+                        'Login.Subtitle':'A traves de las redes sociales',
+                        'Login.FirstContent':'Esta plataforma usa cookies para darte una mejor experiencia',
+                        'Login.SecondContent':'en nuestra plataforma'
                 }
             }
         },

@@ -1,0 +1,30 @@
+.fondo{
+    background-color: #2CDFC3;
+}
+
+.content-login{
+    color: aliceblue;
+    position: relative;
+    top: 230px;
+    -webkit-animation-name: transitionText; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: transitionText;
+    animation-duration: 4s;
+
+}
+
+@-webkit-keyframes transitionText {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes transitionText {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}

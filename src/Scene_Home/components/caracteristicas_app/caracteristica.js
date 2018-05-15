@@ -7,7 +7,7 @@ class caracteristicaHome extends React.Component{
     render() {
       return (
         <div>
-        <section className="aside_section light">
+        <section  className="aside_section light">
             <div className="container">
                 <div className="row">
 

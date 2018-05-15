@@ -7,7 +7,7 @@ class Contribuidores extends React.Component{
     render() {
       return (
         <div>
-           <section id="download" className="download-section">
+           <section  className="download-section">
             <div className="container">
                 <div className="section_heading">
                     <h3>{i18n.t("Home.Desarrolladores.Title")}</h3>

@@ -9,7 +9,7 @@ class SeccionSecundaria extends React.Component{
     render() {
       return (
         <div>
-          <section id="features" className="features-section">
+          <section  className="features-section">
             <div className="container">
                 <div className="section_heading">
                     <h3>{i18n.t('Home.SeccionSecundaria.title')}</h3>
