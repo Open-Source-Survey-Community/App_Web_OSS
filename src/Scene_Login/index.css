@@ -5,7 +5,8 @@
 .content-login{
     color: aliceblue;
     position: relative;
-    top: 230px;
+    top: 160px;
+    left: 20px;
     -webkit-animation-name: transitionText; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: transitionText;
