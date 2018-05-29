@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ComponentLogin from './components/logIn/index';
 import SweetAlert from 'react-bootstrap-sweetalert';
-//import {Redirect} from 'react-router-dom';
 import {GITHUB_LOGIN,GOOGLE_LOGIN,TWITTER_LOGIN,GET_USER, RESET_ERROR, AUTHENTICATING} from '../actions/authentication/index';
 import './index.css';
 class Login extends React.Component {
@@ -21,6 +20,8 @@ class Login extends React.Component {
     componentWillReceiveProps(newProps, props) {
         if (newProps.myInformation.isAuthenticated){
           if (newProps.myInformation.email){
+            this.props.history.push("/Dashboard/"+newProps.myInformation.email+"/"+newProps.myInformation.name);
+            window.location.reload();
 
           }else{
               this.showMessageError('No se encontro email en la cuenta asociada','Registrese en otra cuenta que contenga un correo asociado')
@@ -41,7 +42,6 @@ class Login extends React.Component {
                     confirmBtnBsStyle="danger"
                     title={title}
                     onConfirm={this.hideMessage}
-
           >
             {content}
           </SweetAlert>

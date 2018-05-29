@@ -4,15 +4,15 @@ import DashBoard from './Scene_Dashboard/index';
 import Home from './Scene_Home/index';
 import Results from './Scene_Results/index';
 import Login from './Scene_Login/index';
-import './App.css';
 
+import './App.css';
 const App = ()=>(
   <main>
     <Switch>
       <Route exact path='/' component={Home} />
       <Route path='/login' component={Login}/>
       <Route path='/Results' component={Results}/>
-      <Route path='/Dashboard' component={DashBoard}/>
+      <Route path='/Dashboard/:correo/:displayName' component={DashBoard}/>
     </Switch>
   </main>
 )

@@ -28,7 +28,6 @@ class ComponentLogin extends React.Component{
                 <button className="btn btn-default language-en" value="en" onClick={this.Language}>ENGLISH</button>
                 <button className="btn btn-default language-es" value="es" onClick={this.Language} style={styleBtnLanguage}>SPANISH</button>
            </div>
-           {console.log(this.props.loading)}
           <div className="login-box card">
               <div className="card-body">
                 <div className="form-horizontal form-material" id="loginform">
