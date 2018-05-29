@@ -4,7 +4,6 @@ import {put, call, takeLatest, take} from 'redux-saga/effects';
 
 function* authGithub (){
     try{
-        console.log('error');
         yield put(AUTHENTICATING(true))
         yield call(reduxSagaFirebase.auth.signInWithPopup,providerGithub)
         const channel = yield call(reduxSagaFirebase.auth.channel)

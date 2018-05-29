@@ -19,10 +19,8 @@ class Login extends React.Component {
 
     componentWillReceiveProps(newProps, props) {
         if (newProps.myInformation.isAuthenticated){
-          if (newProps.myInformation.email){
+          if (newProps.myInformation.email && newProps.myInformation.isAuthenticating === false ){
             this.props.history.push("/Dashboard/"+newProps.myInformation.email+"/"+newProps.myInformation.name);
-            window.location.reload();
-
           }else{
               this.showMessageError('No se encontro email en la cuenta asociada','Registrese en otra cuenta que contenga un correo asociado')
           }
