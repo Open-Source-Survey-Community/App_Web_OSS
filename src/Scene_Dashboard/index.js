@@ -1,20 +1,20 @@
 import React from 'react';
-import LoadingComponent from '../animation/loading/index'
+import HeaderComponent from './header/components/index'
+import SidebarComponent from './sideBar/index'
 class DashBoard extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-      loaded_dashboard: false
-    }
   }
-   componentDidMount(){
-    this.setState({loaded_dashboard: true});
-   }
     render() {
       return (
-        <div>
-        {this.state.loaded_dashboard === false ?  <LoadingComponent description="information User" />:null }        
-          hola estas en dashboard
+        <div id="main-wrapper">
+            <HeaderComponent />
+            <SidebarComponent />
+            <div className="page-wrapper">
+                <div className="container-fluid r-aside">
+                  <h2>Aqui va el contenido del dashboard!!</h2>
+                </div>
+            </div>
         </div>
       );
     }

@@ -1166,7 +1166,7 @@ Notify
 *******************/
 .notify {
   position: relative;
-  top: -28px;
+  top: -16px;
   right: -7px; }
   .notify .heartbit {
     position: absolute;
