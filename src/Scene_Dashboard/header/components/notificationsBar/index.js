@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style.css';
 
 class NotificationsComponent extends Component {
   render() {
@@ -13,7 +14,7 @@ class NotificationsComponent extends Component {
         <a className="nav-link dropdown-toggle waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i className="mdi mdi-message"></i>
             <div className="notify"> <span className="heartbit"></span> <span className="point"></span> </div>
         </a>
-            <div className="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
+            <div className="dropdown-menu dropdown-menu-right mailbox animated bounceInDown mostrarMenuNotificaciones">
                 <ul>
                     <li>
                         <div className="drop-title">Notifications</div>

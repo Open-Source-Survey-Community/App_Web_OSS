@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style.css';
 
 class ProfileComponent extends Component {
   render() {
@@ -12,7 +13,7 @@ class ProfileComponent extends Component {
       <div>
         <li className="nav-item dropdown" style={styleProfile}>
                 <a className="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" className="profile-pic" /></a>
-                    <div className="dropdown-menu dropdown-menu-right animated flipInY">
+                    <div className="dropdown-menu dropdown-menu-right animated flipInY mostrarMenuProfile">
                         <ul className="dropdown-user">
                                 <li>
                                     <div className="dw-user-box">

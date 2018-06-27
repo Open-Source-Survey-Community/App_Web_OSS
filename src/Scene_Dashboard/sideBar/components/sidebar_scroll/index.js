@@ -1,51 +1,95 @@
 import React, { Component } from 'react'
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import {Link} from 'react-router-dom';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import DescriptionIcon from '@material-ui/icons/Description';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
+import HelpIcon from '@material-ui/icons/Help';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import BookIcon from '@material-ui/icons/Book';
+import ReceiptIcon from '@material-ui/icons/Receipt';
+import CreateIcon from '@material-ui/icons/Create';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+
 
 class SideBarScrollComponent extends Component {
-
   render() {
     return (
       <div>
-        <nav className="sidebar-nav">
-            <ul id="sidebarnav">
-                <li className="user-profile"> <a className="has-arrow waves-effect waves-dark"  aria-expanded="false"><img src="../assets/images/users/profile.png" alt="user" /><span className="hide-menu">Steave Jobs </span></a>
-                    <ul aria-expanded="false" className="collapse">
-                                <li><a>View my questions reviews's</a></li>
-                                <li><a>View my survies reviews's</a></li>
-                                <li><a>View my questions status's</a></li>
-                                <li><a>View Colaborators</a></li>
-                    </ul>
-                </li>
-                <li className="nav-devider"></li>
-                <li className="nav-small-cap">APP</li>
-                <li> <a className="has-arrow waves-effect waves-dark"  aria-expanded="false"><i className="mdi mdi-gauge"></i><span className="hide-menu">Activities<span className="label label-rouded label-themecolor pull-right">2</span></span></a>
-                            <ul aria-expanded="false" className="collapse">
-                                <li><a href="index.html">Question Portal's</a></li>
-                                <li><a href="index2.html">Survey Portal's</a></li>
-                            </ul>
-                </li>
-                <li> <a className="has-arrow waves-effect waves-dark" aria-expanded="false"><i className="mdi mdi-gauge"></i><span className="hide-menu">Actions<span className="label label-rouded label-themecolor pull-right">2</span></span></a>
-                            <ul aria-expanded="false" className="collapse">
-                                <li><a href="index.html">Create new Question</a></li>
-                                <li><a href="index2.html">Create new Survey</a></li>
-                            </ul>
-                </li>
-                <li> <a className="has-arrow waves-effect waves-dark"  aria-expanded="false"><i className="mdi mdi-gauge"></i><span className="hide-menu">Question<span className="label label-rouded label-themecolor pull-right">2</span></span></a>
-                            <ul aria-expanded="false" className="collapse">
-                                <li><a href="index.html">Handle my questions</a></li>
-                                <li><a href="index2.html">Handle issues question's</a></li>
-                            </ul>
-                </li>
-                <li> <a className="has-arrow waves-effect waves-dark"  aria-expanded="false"><i className="mdi mdi-gauge"></i><span className="hide-menu">Survey<span className="label label-rouded label-themecolor pull-right">4</span></span></a>
-                            <ul aria-expanded="false" className="collapse">
-                                <li><a href="index.html">Handle my surveys</a></li>
-                                <li><a href="index2.html">Handle collaborators</a></li>
-                                <li><a href="index2.html">Handle issues survies's</a></li>
-                                <li><a href="index2.html">Handle results of my survies</a></li>
-                            </ul>
-                </li>
-
-            </ul>
-        </nav>
+      <Link to={`/Dashboard/${correo}/${displayName}`}>
+        <ListItem button>
+        <ListItemIcon>
+            <DashboardIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="MyDashBoard" />
+        </ListItem>
+      </Link>
+      <Link to='/irPortalPreguntas'>
+        <ListItem button>
+        <ListItemIcon>
+            <DescriptionIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="Question Portal's" />
+        </ListItem>
+      </Link>
+      <Link to='/irPortalEncuestas'>
+        <ListItem button>
+        <ListItemIcon>
+            <ChromeReaderModeIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="Survey Portal's" />
+        </ListItem>
+      </Link>
+      <Link to='/crearNuevaPregunta'>
+        <ListItem button>
+        <ListItemIcon>
+            <HelpIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="New Question" />
+        </ListItem>
+      </Link>
+      <Link to='/crearNuevaEncuesta'>
+        <ListItem button>
+        <ListItemIcon>
+            <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="New Survey" />
+        </ListItem>
+      </Link>
+      <Link to={`/administrarMisPreguntas/${idUser}`}>
+        <ListItem button>
+        <ListItemIcon>
+            <BookIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="My Question's" />        
+        </ListItem>
+      </Link>
+      <Link to={`/administrarMisEncuestas/${idUser}`}>
+        <ListItem button>
+        <ListItemIcon>
+            <ReceiptIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="My Surveys" />
+        </ListItem>
+      </Link>
+      <Link to={`/administrarCorreccionesHechasPreguntas/${idUser}`}>
+        <ListItem button>
+        <ListItemIcon>
+            <CreateIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="Issue Question's" />
+        </ListItem>
+      </Link>
+      <Link to={`/administrarCorreccionesHechasEncuestas/${idUser}`}>
+        <ListItem button>
+        <ListItemIcon>
+            <VisibilityIcon />
+        </ListItemIcon>
+        <ListItemText inset primary="Issues Survey's" />
+        </ListItem>
+      </Link>
       </div>
     )
   }

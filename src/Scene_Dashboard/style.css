@@ -1,0 +1,112 @@
+
+.mostrarSidebar{
+    display: none;
+}
+
+.ocultarMenuDesktop{
+    display: block;
+}
+
+.AccionesHeader {
+    position: relative;
+    left: 540px;
+}
+
+.mostrarMenuAccionesApp{
+    margin-left: -560px;
+}
+
+#inputBusqueda{
+    width: 1290px;
+    position: relative;
+    left: -810px;
+    top: -50px;  
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 414px)  {
+    .mostrarSidebar{
+        display: block;
+        position: relative;
+        left: 24px;
+        top: 19px;
+    }
+    .AccionesHeader {
+        position: relative;
+        bottom: 26px;
+        left: 9px;
+    }
+    .ocultarMenuDesktop{
+        display: none;
+    }
+
+    .mostrarMenuProfile{
+        margin-left: -250px;
+    }
+
+    .mostrarMenuNotificaciones{
+        margin-left: -150px;
+    }
+
+    .mostrarMenuMensajes{
+        margin-left: -120px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 800px)  {
+    .mostrarSidebar{
+        display: block;
+        position: relative;
+        left: 24px;
+        top: 19px;
+    }
+    .AccionesHeader {
+        position: relative;
+        bottom: 26px;
+        left: 9px;
+    }
+    .ocultarMenuDesktop{
+        display: none;
+    }
+
+    .mostrarMenuProfile{
+        margin-left: -250px;
+    }
+
+    .mostrarMenuNotificaciones{
+        margin-left: -150px;
+    }
+
+    .mostrarMenuMensajes{
+        margin-left: -120px;
+    }
+
+    #inputBusqueda{
+        width: 790px;
+        position: relative;
+        left: -140px;
+        top: -30px;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    .page-wrapper {
+        margin-left: 1px;
+    }
+}
+
+
+@media (min-width: 768px){
+    .page-wrapper {
+        margin-left: 1px;
+    }
+}
+
+
+
+
+
+

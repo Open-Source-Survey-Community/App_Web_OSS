@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../../../style.css';
 
 class SearchBarComponent extends Component {
   constructor(props){
@@ -25,10 +26,6 @@ class SearchBarComponent extends Component {
   render() {
     let displayForm ={
         display: this.state.display,
-        width: '1290px',
-        position : 'relative',
-        left: '-313px',
-        top: '-50px'
     }
     let styleSearch = {
       position: 'relative',
@@ -42,7 +39,7 @@ class SearchBarComponent extends Component {
             <a className="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0);" onClick= {this.showFormSeachUser}>
                 <i className="ti-search"></i>
             </a>
-            <form className="app-search " style={displayForm}>
+            <form className="app-search" id="inputBusqueda" style={displayForm}>
                 <input type="text" className="form-control" placeholder="Search & enter"/>
                 <a className="srh-btn" onClick={this.hideFormSeachUser}>
                     <i className="ti-close"></i>

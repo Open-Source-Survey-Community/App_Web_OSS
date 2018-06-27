@@ -5,12 +5,13 @@ import MessageComponent from '../messageBar/index'
 import NotificationsComponent from '../notificationsBar/index'
 import MenuComponent from '../menuBar/index'
 import LanguageComponent from '../languageBar/index'
+import '../../../style.css';
 
 class NavbarComponent extends Component {
 
   render() {
     let editarAlturaheader = {
-      height : '30px'
+      height : '30px',
     }
     return (
       <div>
@@ -25,12 +26,12 @@ class NavbarComponent extends Component {
                                 <img src="../assets/images/logo-text.png" alt="" className="dark-logo" />
                                 <img src="../assets/images/logo-light-text.png" className="light-logo" alt="" /></span> </a>
                 </div>
-                <div className="navbar-collapse" style={editarAlturaheader}>
-                    <ul className="navbar-nav mr-auto">
+                <div className="navbar-collapse AccionesHeader" style={editarAlturaheader}>
+                    <ul className="navbar-nav mr-auto mostrarSidebar">
                         <li className="nav-item"> <a className="nav-link nav-toggler hidden-md-up waves-effect waves-dark" ><i className="ti-menu"></i></a> </li>
                         <li className="nav-item"> <a className="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark"><i className="ti-menu"></i></a> </li>
                     </ul>
-                    <ul className="navbar-nav my-lg-0">
+                    <ul className="navbar-nav my-lg-0 ">
                       <SearchBarComponent />
                       <li className="nav-item dropdown">
                         <MessageComponent />
@@ -38,7 +39,7 @@ class NavbarComponent extends Component {
                       <li className="nav-item dropdown">
                         <NotificationsComponent />
                       </li>
-                      <li className="nav-item dropdown mega-dropdown">
+                      <li className="nav-item dropdown mega-dropdown ocultarMenuDesktop">
                           <a className="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i className="mdi mdi-view-grid"></i></a>
                         <MenuComponent />
